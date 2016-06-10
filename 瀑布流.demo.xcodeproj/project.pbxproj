@@ -15,6 +15,8 @@
 		04D314C11D0AE9D400F1141B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D314C01D0AE9D400F1141B /* Assets.xcassets */; };
 		04D314C41D0AE9D400F1141B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D314C21D0AE9D400F1141B /* LaunchScreen.storyboard */; };
 		04D314CF1D0AE9D400F1141B /* ____demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D314CE1D0AE9D400F1141B /* ____demoTests.m */; };
+		04D314E01D0AF8C300F1141B /* WaterFallFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D314DD1D0AF8C200F1141B /* WaterFallFlowLayout.m */; };
+		04D314E11D0AF8C300F1141B /* WaterFallUICollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D314DF1D0AF8C300F1141B /* WaterFallUICollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		04D314CA1D0AE9D400F1141B /* 瀑布流.demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "瀑布流.demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D314CE1D0AE9D400F1141B /* ____demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____demoTests.m"; sourceTree = "<group>"; };
 		04D314D01D0AE9D400F1141B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D314DC1D0AF8C200F1141B /* WaterFallFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFallFlowLayout.h; sourceTree = "<group>"; };
+		04D314DD1D0AF8C200F1141B /* WaterFallFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFallFlowLayout.m; sourceTree = "<group>"; };
+		04D314DE1D0AF8C200F1141B /* WaterFallUICollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFallUICollectionViewCell.h; sourceTree = "<group>"; };
+		04D314DF1D0AF8C300F1141B /* WaterFallUICollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFallUICollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +89,11 @@
 		04D314B01D0AE9D300F1141B /* 瀑布流.demo */ = {
 			isa = PBXGroup;
 			children = (
+				04D314E41D0AFB9700F1141B /* 自定义cellview */,
+				04D314E31D0AFB8A00F1141B /* layout布局 */,
+				04D314E21D0AFB7A00F1141B /* 控制器 */,
 				04D314B41D0AE9D300F1141B /* AppDelegate.h */,
 				04D314B51D0AE9D300F1141B /* AppDelegate.m */,
-				04D314B71D0AE9D300F1141B /* ViewController.h */,
-				04D314B81D0AE9D300F1141B /* ViewController.m */,
 				04D314BA1D0AE9D300F1141B /* Main.storyboard */,
 				04D314C01D0AE9D400F1141B /* Assets.xcassets */,
 				04D314C21D0AE9D400F1141B /* LaunchScreen.storyboard */,
@@ -112,6 +119,33 @@
 				04D314D01D0AE9D400F1141B /* Info.plist */,
 			);
 			path = "瀑布流.demoTests";
+			sourceTree = "<group>";
+		};
+		04D314E21D0AFB7A00F1141B /* 控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				04D314B71D0AE9D300F1141B /* ViewController.h */,
+				04D314B81D0AE9D300F1141B /* ViewController.m */,
+			);
+			name = "控制器";
+			sourceTree = "<group>";
+		};
+		04D314E31D0AFB8A00F1141B /* layout布局 */ = {
+			isa = PBXGroup;
+			children = (
+				04D314DC1D0AF8C200F1141B /* WaterFallFlowLayout.h */,
+				04D314DD1D0AF8C200F1141B /* WaterFallFlowLayout.m */,
+			);
+			name = "layout布局";
+			sourceTree = "<group>";
+		};
+		04D314E41D0AFB9700F1141B /* 自定义cellview */ = {
+			isa = PBXGroup;
+			children = (
+				04D314DE1D0AF8C200F1141B /* WaterFallUICollectionViewCell.h */,
+				04D314DF1D0AF8C300F1141B /* WaterFallUICollectionViewCell.m */,
+			);
+			name = "自定义cellview";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +249,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D314B91D0AE9D300F1141B /* ViewController.m in Sources */,
+				04D314E11D0AF8C300F1141B /* WaterFallUICollectionViewCell.m in Sources */,
 				04D314B61D0AE9D300F1141B /* AppDelegate.m in Sources */,
+				04D314E01D0AF8C300F1141B /* WaterFallFlowLayout.m in Sources */,
 				04D314BF1D0AE9D400F1141B /* ____demo.xcdatamodeld in Sources */,
 				04D314B31D0AE9D300F1141B /* main.m in Sources */,
 			);
@@ -404,6 +440,7 @@
 				04D314D51D0AE9D400F1141B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04D314D61D0AE9D400F1141B /* Build configuration list for PBXNativeTarget "瀑布流.demoTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +449,7 @@
 				04D314D81D0AE9D400F1141B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
